@@ -1,3 +1,5 @@
+// ignore_for_file: library_prefixes
+
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:pharma_retail/app/resources/assets_manager.dart';
@@ -8,7 +10,7 @@ import '../../../../app/resources/values_manager.dart';
 import 'dart:ui' as UI;
 
 class GroupDetailsScreen extends StatelessWidget {
-  GroupDetailsScreen({super.key});
+  const GroupDetailsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

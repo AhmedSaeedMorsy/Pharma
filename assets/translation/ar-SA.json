@@ -10,7 +10,7 @@
       "byContinuingYouAgreeTo": " بالمتابعة ، أنت توافق على فارما ريتيل",
       "termsCondition": "الشروط والأحكام",
       "welcomeToPharmaRetail": "مرحبا بكم في فارما ريتيل !",
-      "searchHint": "ما الذي تبحث عنه ؟",
+      "searchHint": "بحث في فارما ",
       "chooseLanguage": "اختر اللغة",
       "newProducts": "المنتجات الجديدة",
       "viewAll": "عرض الكل",
@@ -19,7 +19,7 @@
       "bestDeals": "أفضل العروض",
       "salvageProducts": "منتجات اوشكت علي الانتهاء",
       "month3_6": "3-6 شهور",
-      "rareProduct": "المنتجات النادرة",
+      "recomendationProduct": "المنتجات المرشحة",
       "shopByCategory": "تسوق حسب الاقسام",
       "shopByBrand": "تسوق حسب الماركة",
       "productDetails": "تفاصيل المنتج",
@@ -78,5 +78,11 @@
       "fullAddress": "العنوان بالكامل",
       "orderDetails": "تفاصيل الطلب",
       "groups": "المجموعات",
-      "joined": "منضم"
+      "joined": "منضم",
+      "gender": "النوع",
+      "age": "العمر",
+      "maritalStatus": "الحالة الاجتماعية",
+      "administrativeLevel": "المستوي الاداري",
+      "mainAddress": "العنوان الرئيسي",
+      "hobbies": "الهوايات"
 }

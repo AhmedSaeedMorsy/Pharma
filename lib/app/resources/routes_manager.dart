@@ -4,12 +4,10 @@ import 'package:pharma_retail/language/view/language_screen.dart';
 import 'package:pharma_retail/splash_screen/view/splash_screen.dart';
 import 'package:pharma_retail/user/presentation/add_shipping_address/view/add_shipping_address_screen.dart';
 import 'package:pharma_retail/user/presentation/filter/view/filter_screen.dart';
-import 'package:pharma_retail/user/presentation/groups/view/groups_screen.dart';
-import 'package:pharma_retail/user/presentation/membership/view/membership_screen.dart';
 import 'package:pharma_retail/user/presentation/order_details/view/order_details_screen.dart';
 import 'package:pharma_retail/user/presentation/orders/view/orders_screen.dart';
 import 'package:pharma_retail/user/presentation/payment_method/view/payment_method_screen.dart';
-import 'package:pharma_retail/user/presentation/rare_product/view/rare_product_screen.dart';
+import 'package:pharma_retail/user/presentation/recomendation_product/view/recomendation_product_screen.dart';
 import 'package:pharma_retail/user/presentation/salvage_product/view/salvage_product_screen.dart';
 import 'package:pharma_retail/user/presentation/search/view/search_screen.dart';
 import 'package:pharma_retail/user/presentation/success_otp_verification/view/success_otp_verification_screen.dart';
@@ -28,7 +26,7 @@ class Routes {
   static const String loginRoute = "/loginRoute";
   static const String layoutRoute = "/layoutRoute";
   static const String salvageProductRoute = "/salvageProductRoute";
-  static const String rareProductRoute = "/rareProductRoute";
+  static const String recomendationProductRoute = "/recomendationProductRoute";
   static const String searchRoute = "/searchRoute";
   static const String filterRoute = "/filterRoute";
   static const String myCartRoute = "/myCartRoute";
@@ -38,7 +36,6 @@ class Routes {
   static const String successOtpVerificationRoute =
       "/successOtpVerificationRoute";
   static const String ordersRoute = "/ordersRoute";
-  static const String membershipRoute = "/membershipRoute";
   static const String locationsRoute = "/locationsRoute";
   static const String addShippingAddressRoute = "/addShippingAddressRoute";
   static const String orderDetailsRoute = "/orderDetailsRoute";
@@ -100,10 +97,6 @@ class RouteGenerator {
         return MaterialPageRoute(
           builder: (_) => OrdersScreen(),
         );
-      case Routes.membershipRoute:
-        return MaterialPageRoute(
-          builder: (_) => MembershipScreen(),
-        );
       case Routes.locationsRoute:
         return MaterialPageRoute(
           builder: (_) => const LocationsScreen(),
@@ -112,9 +105,9 @@ class RouteGenerator {
         return MaterialPageRoute(
           builder: (_) => const AddShippingAddressScreen(),
         );
-      case Routes.rareProductRoute:
+      case Routes.recomendationProductRoute:
         return MaterialPageRoute(
-          builder: (_) => const RareProductScreen(),
+          builder: (_) => const RecomendationProductScreen(),
         );
       case Routes.orderDetailsRoute:
         return MaterialPageRoute(
@@ -122,7 +115,7 @@ class RouteGenerator {
         );
       case Routes.groupDetailsRoute:
         return MaterialPageRoute(
-          builder: (_) =>  GroupDetailsScreen(),
+          builder: (_) => const GroupDetailsScreen(),
         );
       default:
         return unDefiendRoute();

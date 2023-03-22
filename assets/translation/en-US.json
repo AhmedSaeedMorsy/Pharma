@@ -10,7 +10,7 @@
       "byContinuingYouAgreeTo": "By continuing, you agree to pharma retail's",
       "termsCondition": "Terms & condition",
       "welcomeToPharmaRetail": "Welcome to Pharma retail !",
-      "searchHint": "What are you looking for ?",
+      "searchHint": "Search Pharma Retail",
       "chooseLanguage": "Choose your language",
       "newProducts": "New Products",
       "viewAll": "View all",
@@ -19,7 +19,8 @@
       "bestDeals": "Best deals",
       "salvageProducts": "Salvage Products",
       "month3_6": "3-6 Months",
-      "rareProduct": "Rare Products",
+      "gender": "Gender",
+      "recomendationProduct": "Recomendation Products",
       "shopByCategory": "Shop by category",
       "shopByBrand": "Shop by brand",
       "productDetails": "Product Details",
@@ -77,5 +78,11 @@
       "department": "Department #",
       "fullAddress": "Full Address",
       "orderDetails": "Order Details",
-      "groups": "Groups","joined":"Joined"
+      "groups": "Groups",
+      "joined": "Joined",
+      "age": "Age",
+      "maritalStatus": "Marital Status",
+      "mainAddress": "Main Address",
+      "administrativeLevel": "Administrative Level",
+      "hobbies": "Hobbies"
 }

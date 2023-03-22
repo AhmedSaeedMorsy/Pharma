@@ -213,7 +213,7 @@ class HomeScreen extends StatelessWidget {
                 physics: const BouncingScrollPhysics(),
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) =>
-                    salvageWidget(context: context),
+                    bestDealsWidget(context: context),
                 separatorBuilder: (context, index) => SizedBox(
                   width: MediaQuery.of(context).size.width / AppSize.s30,
                 ),
@@ -360,7 +360,7 @@ class HomeScreen extends StatelessWidget {
               children: [
                 Expanded(
                   child: Text(
-                    AppStrings.rareProduct.tr(),
+                    AppStrings.recomendationProduct.tr(),
                     style: Theme.of(context).textTheme.displayLarge!.copyWith(
                           color: ColorManager.primaryDarkColor,
                         ),
@@ -370,7 +370,7 @@ class HomeScreen extends StatelessWidget {
                   onTap: () {
                     Navigator.pushNamed(
                       context,
-                      Routes.rareProductRoute,
+                      Routes.recomendationProductRoute,
                     );
                   },
                   child: Text(
@@ -487,6 +487,113 @@ class HomeScreen extends StatelessWidget {
   }
 
   Widget salvageWidget({
+    required BuildContext context,
+  }) =>
+      Stack(
+        alignment: AlignmentDirectional.topEnd,
+        children: [
+          Container(
+            width: AppSize.s100.w,
+            height: AppSize.s100.h,
+            padding: EdgeInsets.symmetric(
+              horizontal: MediaQuery.of(context).size.width / AppSize.s30,
+              vertical: MediaQuery.of(context).size.height / AppSize.s50,
+            ),
+            decoration: BoxDecoration(
+              color: ColorManager.lightBlue,
+              borderRadius: BorderRadius.circular(
+                AppSize.s10,
+              ),
+            ),
+            child: Container(
+              color: Colors.white,
+              padding: EdgeInsets.symmetric(
+                horizontal: MediaQuery.of(context).size.width / AppSize.s30,
+                vertical: MediaQuery.of(context).size.height / AppSize.s50,
+              ),
+              child: Image(
+                image: const AssetImage(
+                  AssetsManager.demo,
+                ),
+                width: AppSize.s100.w,
+                height: AppSize.s100.h,
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(
+              vertical: MediaQuery.of(context).size.height / AppSize.s50,
+            ),
+            child: Container(
+              padding: EdgeInsets.symmetric(
+                horizontal: MediaQuery.of(context).size.width / AppSize.s30,
+                vertical: MediaQuery.of(context).size.height / AppSize.s350,
+              ),
+              decoration: const BoxDecoration(
+                color: ColorManager.red,
+                borderRadius: BorderRadiusDirectional.only(
+                  topStart: Radius.circular(
+                    AppSize.s5,
+                  ),
+                  bottomStart: Radius.circular(
+                    AppSize.s5,
+                  ),
+                ),
+              ),
+              child: Text(
+                "-30%",
+                style: getBoldStyle(
+                  fontSize: FontSizeManager.s10.sp,
+                  color: ColorManager.white,
+                ),
+              ),
+            ),
+          ),
+          Align(
+            alignment: AlignmentDirectional.bottomEnd,
+            child: Padding(
+              padding: EdgeInsets.symmetric(
+                vertical: MediaQuery.of(context).size.height / AppSize.s50,
+              ),
+              child: Container(
+                padding: EdgeInsets.symmetric(
+                  horizontal: MediaQuery.of(context).size.width / AppSize.s30,
+                  vertical: MediaQuery.of(context).size.height / AppSize.s350,
+                ),
+                decoration: const BoxDecoration(
+                  color: ColorManager.primaryDarkColor,
+                  borderRadius: BorderRadiusDirectional.only(
+                    topStart: Radius.circular(
+                      AppSize.s5,
+                    ),
+                    bottomStart: Radius.circular(
+                      AppSize.s5,
+                    ),
+                  ),
+                ),
+                child: Row(
+                  children: [
+                    Text(
+                      "4",
+                      style: getBoldStyle(
+                        fontSize: FontSizeManager.s10.sp,
+                        color: ColorManager.white,
+                      ),
+                    ),
+                    Icon(
+                      Icons.star,
+                      color: ColorManager.white,
+                      size: AppSize.s10.w,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ],
+      );
+
+  Widget bestDealsWidget({
     required BuildContext context,
   }) =>
       Stack(

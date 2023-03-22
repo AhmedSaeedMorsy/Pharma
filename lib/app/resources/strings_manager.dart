@@ -28,7 +28,7 @@ class AppStrings {
  Ut wisi enim ad minim veniam""";
   static String salvageProducts = "salvageProducts";
   static String month3_6 = "month3_6";
-  static String rareProduct = "rareProduct";
+  static String recomendationProduct = "recomendationProduct";
   static String shopByCategory = "shopByCategory";
   static String shopByBrand = "shopByBrand";
   static String productDetails = "productDetails";
@@ -89,4 +89,10 @@ class AppStrings {
   static String groups = "groups";
   static String orderDetails = "orderDetails";
   static String joined = "joined";
+  static String gender = "gender";
+  static String maritalStatus = "maritalStatus";
+  static String age = "age";
+  static String administrativeLevel = "administrativeLevel";
+  static String mainAddress = "mainAddress";
+  static String hobbies = "hobbies";
 }

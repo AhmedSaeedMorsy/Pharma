@@ -13,8 +13,8 @@ import 'package:pharma_retail/app/resources/strings_manager.dart';
 import '../../../../app/resources/routes_manager.dart';
 import '../../../../app/resources/values_manager.dart';
 
-class RareProductScreen extends StatelessWidget {
-  const RareProductScreen({super.key});
+class RecomendationProductScreen extends StatelessWidget {
+  const RecomendationProductScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +47,7 @@ class RareProductScreen extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      AppStrings.rareProduct.tr(),
+                      AppStrings.recomendationProduct.tr(),
                       style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                             fontSize: FontSizeManager.s18.sp,
                           ),

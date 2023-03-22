@@ -74,23 +74,48 @@ class ProfileScreen extends StatelessWidget {
                 ),
                 profileItem(
                   context: context,
+                  label: AppStrings.gender.tr(),
+                  icon: const Icon(Icons.edit),
+                  onPressed: () {},
+                ),
+                profileItem(
+                  context: context,
+                  label: AppStrings.age.tr(),
+                  icon: const Icon(Icons.edit),
+                  onPressed: () {},
+                ),
+                profileItem(
+                  context: context,
+                  label: AppStrings.maritalStatus.tr(),
+                  icon: const Icon(Icons.edit),
+                  onPressed: () {},
+                ),
+                profileItem(
+                  context: context,
+                  label: AppStrings.administrativeLevel.tr(),
+                  icon: const Icon(Icons.edit),
+                  onPressed: () {},
+                ),
+                profileItem(
+                  context: context,
+                  label: AppStrings.mainAddress.tr(),
+                  icon: const Icon(Icons.edit),
+                  onPressed: () {},
+                ),
+                profileItem(
+                  context: context,
+                  label: AppStrings.hobbies.tr(),
+                  icon: const Icon(Icons.edit),
+                  onPressed: () {},
+                ),
+                profileItem(
+                  context: context,
                   label: AppStrings.orderHistory.tr(),
                   icon: const Icon(Icons.arrow_right_outlined),
                   onPressed: () {
                     Navigator.pushNamed(
                       context,
                       Routes.ordersRoute,
-                    );
-                  },
-                ),
-                profileItem(
-                  context: context,
-                  label: AppStrings.membership.tr(),
-                  icon: const Icon(Icons.arrow_right_outlined),
-                  onPressed: () {
-                    Navigator.pushNamed(
-                      context,
-                      Routes.membershipRoute,
                     );
                   },
                 ),

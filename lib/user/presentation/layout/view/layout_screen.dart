@@ -9,9 +9,6 @@ import 'package:pharma_retail/user/presentation/layout/controller/event.dart';
 import 'package:pharma_retail/user/presentation/layout/controller/states.dart';
 import '../../../../app/resources/assets_manager.dart';
 import 'dart:ui' as UI;
-
-import '../../../../app/resources/routes_manager.dart';
-
 class LayoutScreen extends StatelessWidget {
   const LayoutScreen({super.key});
 
